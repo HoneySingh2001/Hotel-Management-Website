@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Screen Division</title>
+    <link rel="stylesheet" href="Services.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row1">
+            <div class="col-6">
+                <div class="image-container">
+                <img src="staics/f3.jpg" alt="Your Image" class="image">
+            </div>
+        </div>
+            <div class="col-6">
+                <div class="content">
+                    <h2 class="fancy-heading">Content Goes Here</h2>
+                    <p class="content-text">This is your content. You can put any text or HTML elements here.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row2" style="border-radius: 5px;">
+            <div class="col-12">
+                <div class="center-content">
+                    <h2>Facilities and Services</h2>
+                    <p>Here you can describe the facilities and services provided.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col-3">
+                <div class="facility-box">
+                    <h3>AC Rooms</h3>
+                    <p>Description of AC rooms facility goes here.</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="facility-box">
+                    <h3>Parking Lot</h3>
+                    <p>Description of parking lot facility goes here.</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="facility-box">
+                    <h3>Free Wi-Fi</h3>
+                    <p>Description of free Wi-Fi facility goes here.</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="facility-box">
+                    <h3>Swimming Pool</h3>
+                    <p>Description of swimming pool facility goes here.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="col-3">
+                <div class="facility-box">
+                    <h3>Gym</h3>
+                    <p>Description of gym facility goes here.</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="facility-box">
+                    <h3>Restaurant</h3>
+                    <p>Description of restaurant facility goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="facilityModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="facilityTitle">Facility Title</h2>
+            <p id="facilityDescription">Facility description goes here.</p>
+        </div>
+    </div>
+    <script src="Services.js"></script>
+</body>
+</html>
