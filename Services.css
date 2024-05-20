@@ -1,0 +1,149 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color:  #f2f5ab;
+}
+
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    background-color: rgb(226, 199, 163);
+    width: 80%;
+    margin-top: 20px;
+}
+
+.col-6, .col-12, .col-3 {
+    flex: 1;
+    padding: 20px;
+}
+
+.content, .center-content {
+    text-align: center;
+}
+
+.facility-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+}
+.container .row1 .col-6 .image {
+    
+    margin-top: 20px; /* Add margin-top */
+}
+.facility-box:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+/* Your existing CSS styles */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    background-color: #f0f0f0; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px; /* Add some space below the image container */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+
+/*.facility-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.facility-box:hover {
+    background-color: #f0f0f0;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.fancy-heading {
+    font-family: 'Parisienne', cursive; /* Use Parisienne font from Google Fonts */
+    font-size: 40px; /* Adjust font size as needed */
+    color: #800080; /* Purple color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+    text-decoration: underline; /* Add an underline decoration */
+    letter-spacing: 2px; /* Add letter spacing for a stylish look */
+}
+
+.content-text::first-letter {
+    font-size: 150%; /* Increase the size of the first letter for decorative effect */
+    color: #800080; /* Change color of the first letter */
+    font-family: 'Parisienne', cursive; /* Apply a cursive font to the first letter */
+    margin-right: 5px; /* Add a small margin to separate the first letter from the rest of the text */
+}
+
+.content-text::first-line {
+    font-weight: bold; /* Make the first line bold for emphasis */
+}
+.content {
+    background-color: #f9f9f9; /* Light gray background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners for a more stylish appearance */
+}
