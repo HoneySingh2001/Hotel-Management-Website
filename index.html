@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar with Image Slider</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="HotelGallery.html">Gallery</a></li>
+      <li><a href="Services.html">Owner Services</a></li>
+      <li><a href="staics/Contact.html">Contact Us</a></li>
+    </ul>
+  </nav> -->
+
+  <!-- <div class="navbar">
+    <div class="left-section">
+        <button id="bookOnlineBtn">Book Online</button>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav id="mainMenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="HotelGallery.html">Gallery</a></li>
+            <li><a href="Services.html">Owner Services</a></li>
+            <li><a href="staics/Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</div> -->
+<header>
+  <div class="navbar">
+      <div class="left-section">
+          <button id="bookOnlineBtn">Book Online</button>
+          <button id="signInBtn">Sign In</button>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <nav id="mainMenu">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="HotelGallery.html">Gallery</a></li>
+              <li><a href="Services.html">Owner Services</a></li>
+              <li><a href="staics/Contact.html">Contact Us</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+  <!-- <div class="reservation-section">
+    <!-- <button onclick="location.href='reservation.html'">Reservation</button> -->
+    <!-- <button id="bookOnlineBtn">Book Online</button>
+  </div> --> -->
+
+  <h2 class="section-heading">Maa Kushalya Garden Wedding Home</h2>
+  <div class="image-container">
+    <img id="slider" src="staics\f2.jpg" alt="Slider Image">
+  </div>
+
+   <!-- New content: Heading and Carousel -->
+  <h2 class="carousel-heading">About Our Hotel</h2>
+
+  <!-- New content: About Our Hotel paragraph -->
+<p class="hotel-description">Welcome to our exquisite hotel, where luxury meets tranquility. Nestled in the heart of picturesque surroundings, our hotel offers a perfect blend of elegance and comfort. Whether you're here for a leisurely retreat or a business rendezvous, our attentive staff and top-notch amenities ensure an unforgettable experience. Immerse yourself in the charm of our well-appointed rooms, indulge in delectable cuisine at our fine dining restaurant, or unwind by the sparkling poolside. At our hotel, every moment is crafted to exceed your expectations, making it the perfect destination for your next getaway.</p>
+
+<div class="carousel-container">
+  <div class="carousel">
+    <img src="staics\h10.jpg" alt="Image 1" onclick="openModal('staics/h10.jpg')">
+    <img src="staics\h9.jpg" alt="Image 2" onclick="openModal('staics/h9.jpg')">
+    <img src="staics\h8.jpg" alt="Image 3" onclick="openModal('staics/h8.jpg')">
+    <img src="staics\h7.jpg" alt="Image 4" onclick="openModal('staics/h7.jpg')">
+    <img src="staics\h6.jpg" alt="Image 5" onclick="openModal('staics/h6.jpg')">
+    <img src="staics\h5.jpg" alt="Image 5" onclick="openModal('staics/h5.jpg')">
+    <img src="staics\h4.jpg" alt="Image 5" onclick="openModal('staics/h4.jpg')">
+    <img src="staics\h3.jpg" alt="Image 5" onclick="openModal('staics/h3.jpg')">
+    <img src="staics\h10.jpg" alt="Image 5" onclick="openModal('staics/h10.jpg')">
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+ <!-- Contact section -->
+  <div class="contact-section">
+    <h2 class="contact-heading">Contact Us</h2>
+    <p class="contact-info">For inquiries and reservations, please contact us:</p>
+    <p class="contact-info">Phone: +123456789</p>
+    <p class="contact-info">Email: info@example.com</p>
+    <p class="contact-info">Address: 123 Street Name, City, Country</p>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <!-- Modal for event rates -->
+    <!-- <div id="eventRatesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRatesModal()">&times;</span>
+            <h2>Event Rates</h2>
+            <a href=""> <p>Wedding Event: $1000</p></a>
+            <a href=""> <p>Birthday Party: $500</p></a>
+            <a href=""><p>Corporate Event: $1500</p></a>
+            <!-- Add more event rates as needed -->
+        </div>
+    </div> -->
+
+
+  <script src="index.js"></script>
+   <script>
+        function showRatesModal() {
+            var modal = document.getElementById("eventRatesModal");
+            modal.style.display = "block";
+        }
+
+        function closeRatesModal() {
+            var modal = document.getElementById("eventRatesModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
