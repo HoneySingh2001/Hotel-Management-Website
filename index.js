@@ -1,5 +1,5 @@
-const images = ['staics/f1.jpg', 'staics/f2.jpg','staics/f3.jpg',
-'staics/f4.jpg','staics/f5.jpg' ,'staics/f6.jpg']; // Add your image URLs here
+const images = ['f1.jpg', 'f2.jpg','f3.jpg',
+'f4.jpg','f5.jpg' ,'f6.jpg']; // Add your image URLs here
 let currentIndex = 0;
 
 function changeImage() {
